@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ScamLens — Think Before You Click</title>
+
+    <meta
+        name="description"
+        content="ScamLens uses AI to identify suspicious messages, payment requests, job offers and links before you act."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="#" class="brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <span>Scam<span>Lens</span></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#how-it-works">How it works</a>
+            <a href="#analyzer">Analyzer</a>
+            <a href="#why">Why ScamLens</a>
+        </nav>
+
+        <button
+            class="nav-button"
+            onclick="scrollToAnalyzer()"
+        >
+            Analyze a message
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            <span class="live-dot"></span>
+            AI-powered scam detection
+        </div>
+
+        <h1>
+            Think twice.<br>
+            <span>Click once.</span>
+        </h1>
+
+        <p class="hero-description">
+            ScamLens helps you understand suspicious messages, links,
+            payment requests and job offers before they cost you money
+            or personal information.
+        </p>
+
+        <div class="hero-actions">
+
+            <button
+                class="primary-button"
+                onclick="scrollToAnalyzer()"
+            >
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Analyze something suspicious
+            </button>
+
+            <a href="#how-it-works" class="secondary-button">
+                See how it works
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+
+        </div>
+
+        <div class="hero-trust">
+
+            <div class="trust-item">
+                <i class="fa-solid fa-bolt"></i>
+                Instant analysis
+            </div>
+
+            <div class="trust-item">
+                <i class="fa-solid fa-lock"></i>
+                Privacy-first
+            </div>
+
+            <div class="trust-item">
+                <i class="fa-solid fa-brain"></i>
+                AI-assisted
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- HERO VISUAL -->
+
+    <div class="hero-visual">
+
+        <div class="visual-glow"></div>
+
+        <div class="threat-card">
+
+            <div class="threat-header">
+
+                <div class="threat-title">
+                    <div class="threat-icon">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+
+                    <div>
+                        <span>Threat detected</span>
+                        <small>Just now</small>
+                    </div>
+                </div>
+
+                <span class="threat-badge">HIGH RISK</span>
+
+            </div>
+
+
+            <div class="message-preview">
+
+                <div class="sender">
+                    <div class="avatar">SB</div>
+
+                    <div>
+                        <strong>Service Bank</strong>
+                        <span>+91 ••••• 4821</span>
+                    </div>
+
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+
+                <p>
+                    Your account will be suspended today.
+                    Verify your KYC immediately:
+                    <strong>bit.ly/verify-...</strong>
+                </p>
+
+            </div>
+
+
+            <div class="risk-meter">
+
+                <div class="meter-label">
+                    <span>Risk assessment</span>
+                    <strong>87 / 100</strong>
+                </div>
+
+                <div class="meter">
+                    <div class="meter-fill"></div>
+                </div>
+
+            </div>
+
+
+            <div class="mini-flags">
+
+                <span>
+                    <i class="fa-solid fa-bolt"></i>
+                    Urgency
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-link"></i>
+                    Suspicious link
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-user-secret"></i>
+                    Impersonation
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="floating-chip chip-one">
+            <i class="fa-solid fa-shield"></i>
+            Protected
+        </div>
+
+        <div class="floating-chip chip-two">
+            <i class="fa-solid fa-circle-check"></i>
+            4 red flags
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     STATS
+========================= -->
+
+<section class="stats-section">
+
+    <div class="stat">
+
+        <strong>4+</strong>
+
+        <span>
+            scam signals<br>
+            checked
+        </span>
+
+    </div>
+
+    <div class="stat-divider"></div>
+
+    <div class="stat">
+
+        <strong>3 sec</strong>
+
+        <span>
+            typical<br>
+            analysis
+        </span>
+
+    </div>
+
+    <div class="stat-divider"></div>
+
+    <div class="stat">
+
+        <strong>1 goal</strong>
+
+        <span>
+            help you<br>
+            stay safe
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     HOW IT WORKS
+========================= -->
+
+<section
+    class="section how-section"
+    id="how-it-works"
+>
+
+    <div class="section-heading">
+
+        <div class="section-label">
+            HOW IT WORKS
+        </div>
+
+        <h2>
+            From suspicious<br>
+            <span>to certain.</span>
+        </h2>
+
+        <p>
+            ScamLens doesn't just tell you something looks risky.
+            It explains what caught its attention and what you should
+            do next.
+        </p>
+
+    </div>
+
+
+    <div class="steps">
+
+        <div class="step">
+
+            <div class="step-number">01</div>
+
+            <div class="step-icon">
+                <i class="fa-solid fa-paste"></i>
+            </div>
+
+            <h3>Paste</h3>
+
+            <p>
+                Paste a suspicious message, email,
+                job offer or payment request.
+            </p>
+
+        </div>
+
+
+        <div class="step-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">02</div>
+
+            <div class="step-icon">
+                <i class="fa-solid fa-microchip"></i>
+            </div>
+
+            <h3>Analyze</h3>
+
+            <p>
+                ScamLens looks for common social engineering
+                and scam patterns.
+            </p>
+
+        </div>
+
+
+        <div class="step-arrow">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+
+        <div class="step">
+
+            <div class="step-number">03</div>
+
+            <div class="step-icon">
+                <i class="fa-solid fa-shield-heart"></i>
+            </div>
+
+            <h3>Act safely</h3>
+
+            <p>
+                Understand the warning signs and get
+                clear next-step recommendations.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ANALYZER
+========================= -->
+
+<section
+    class="analyzer-section"
+    id="analyzer"
+>
+
+    <div class="analyzer-wrapper">
+
+        <div class="analyzer-heading">
+
+            <div class="section-label">
+                SCAN SOMETHING
+            </div>
+
+            <h2>
+                Got a bad feeling<br>
+                <span>about something?</span>
+            </h2>
+
+            <p>
+                Don't guess. Let ScamLens take a second look.
+            </p>
+
+        </div>
+
+
+        <div class="analyzer-card">
+
+            <div class="analyzer-top">
+
+                <div class="input-tabs">
+
+                    <button
+                        class="type-tab active"
+                        data-type="message"
+                    >
+                        <i class="fa-solid fa-message"></i>
+                        Message
+                    </button>
+
+                    <button
+                        class="type-tab"
+                        data-type="email"
+                    >
+                        <i class="fa-solid fa-envelope"></i>
+                        Email
+                    </button>
+
+                    <button
+                        class="type-tab"
+                        data-type="job"
+                    >
+                        <i class="fa-solid fa-briefcase"></i>
+                        Job offer
+                    </button>
+
+                    <button
+                        class="type-tab"
+                        data-type="payment"
+                    >
+                        <i class="fa-solid fa-credit-card"></i>
+                        Payment
+                    </button>
+
+                </div>
+
+                <div class="privacy-note">
+                    <i class="fa-solid fa-lock"></i>
+                    Analyze privately
+                </div>
+
+            </div>
+
+
+            <div class="textarea-wrapper">
+
+                <textarea
+                    id="messageInput"
+                    placeholder="Paste the suspicious message here...
+
+Example:
+'Your bank account will be blocked today. Verify your KYC immediately by clicking this link...'"
+                    maxlength="5000"
+                ></textarea>
+
+                <div class="textarea-bottom">
+
+                    <span id="charCount">
+                        0 / 5000
+                    </span>
+
+                    <button
+                        class="clear-button"
+                        onclick="clearMessage()"
+                    >
+                        Clear
+                    </button>
+
+                </div>
+
+            </div>
+            <div class="screenshot-upload">
+
+            <label for="screenshotInput">
+                <i class="fa-solid fa-image"></i>
+                    Upload Screenshot
+            </label>
+
+            <input
+                type="file"
+                id="screenshotInput"
+                accept="image/png,image/jpeg,image/webp"
+                hidden
+            >
+
+            <span id="fileName"></span>
+
+            </div>
+
+            <div class="quick-examples">
+
+                <span>Try an example:</span>
+
+                <button
+                    onclick="loadExample('bank')"
+                >
+                    🏦 Bank alert
+                </button>
+
+                <button
+                    onclick="loadExample('prize')"
+                >
+                    🎁 Prize message
+                </button>
+
+                <button
+                    onclick="loadExample('job')"
+                >
+                    💼 Job offer
+                </button>
+
+            </div>
+
+
+            <button
+                class="analyze-button"
+                id="analyzeButton"
+                onclick="analyzeMessage()"
+            >
+
+                <span class="button-content">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Analyze with ScamLens
+                </span>
+
+                <span class="button-loading">
+                    <span class="spinner"></span>
+                    Analyzing...
+                </span>
+
+            </button>
+
+
+            <p class="analyzer-disclaimer">
+                ScamLens provides an AI-assisted risk assessment,
+                not a guarantee. Always verify important requests
+                through official channels.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RESULTS
+========================= -->
+
+<section
+    class="results-section hidden"
+    id="results"
+>
+
+    <div class="results-container">
+
+        <div class="results-header">
+
+            <div>
+
+                <div class="section-label">
+                    ANALYSIS COMPLETE
+                </div>
+
+                <h2>
+                    Here's what<br>
+                    <span>ScamLens noticed.</span>
+                </h2>
+
+            </div>
+
+            <button
+                class="scan-again"
+                onclick="scanAgain()"
+            >
+                <i class="fa-solid fa-rotate"></i>
+                Scan another
+            </button>
+
+        </div>
+
+
+        <div class="results-grid">
+
+            <!-- Risk Card -->
+
+            <div class="risk-card">
+
+                <div class="risk-card-header">
+
+                    <span>OVERALL RISK</span>
+
+                    <div class="status-icon">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="risk-score-container">
+
+                    <div class="score-ring">
+
+                        <svg viewBox="0 0 160 160">
+
+                            <circle
+                                class="ring-bg"
+                                cx="80"
+                                cy="80"
+                                r="68"
+                            ></circle>
+
+                            <circle
+                                class="ring-progress"
+                                id="ringProgress"
+                                cx="80"
+                                cy="80"
+                                r="68"
+                            ></circle>
+
+                        </svg>
+
+                        <div class="score-center">
+
+                            <strong id="riskScore">
+                                87
+                            </strong>
+
+                            <span>/ 100</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="risk-level high"
+                    id="riskLevel"
+                >
+                    HIGH RISK
+                </div>
+
+
+                <p id="riskSummary">
+                    This message contains multiple warning
+                    signs commonly associated with scams.
+                </p>
+
+            </div>
+
+
+            <!-- Red Flags -->
+
+            <div class="flags-card">
+
+                <div class="card-title-row">
+
+                    <div>
+
+                        <span class="small-label">
+                            WARNING SIGNS
+                        </span>
+
+                        <h3>
+                            Why we flagged it
+                        </h3>
+
+                    </div>
+
+                    <span
+                        class="flag-count"
+                        id="flagCount"
+                    >
+                        4 flags
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="flags-list"
+                    id="flagsList"
+                >
+
+                    <!-- JS inserts flags -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Recommended Action -->
+
+        <div class="action-card">
+
+            <div class="action-icon">
+                <i class="fa-solid fa-shield-heart"></i>
+            </div>
+
+            <div class="action-content">
+
+                <span class="small-label">
+                    RECOMMENDED ACTION
+                </span>
+
+                <h3 id="actionTitle">
+                    Don't click the link.
+                </h3>
+
+                <p id="actionDescription">
+                    Verify the message independently using the
+                    organization's official website or phone number.
+                </p>
+
+                <div
+                    class="action-list"
+                    id="actionList"
+                >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Explain Simply -->
+
+        <div class="simple-explanation">
+
+            <div class="simple-icon">
+                <i class="fa-solid fa-face-smile"></i>
+            </div>
+
+            <div>
+
+                <span class="small-label">
+                    SIMPLE EXPLANATION
+                </span>
+
+                <h3>
+                    Explain like I'm 15
+                </h3>
+
+                <p id="simpleExplanation">
+                    Someone is trying to make you panic so you act
+                    before you have time to check whether the message
+                    is actually real.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHY SCAMLENS
+========================= -->
+
+<section
+    class="section why-section"
+    id="why"
+>
+
+    <div class="why-grid">
+
+        <div class="why-content">
+
+            <div class="section-label">
+                WHY SCAMLENS
+            </div>
+
+            <h2>
+                Detection is only<br>
+                <span>half the job.</span>
+            </h2>
+
+            <p>
+                A warning isn't useful if you don't understand it.
+                ScamLens turns confusing scam signals into simple,
+                actionable advice.
+            </p>
+
+            <div class="feature-list">
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+
+                    <div>
+                        <strong>Explain the red flags</strong>
+
+                        <span>
+                            Understand exactly what looks suspicious.
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-person-running"></i>
+                    </div>
+
+                    <div>
+                        <strong>Tell you what to do</strong>
+
+                        <span>
+                            Get practical steps instead of just a warning.
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+
+                    <div>
+                        <strong>Speak human</strong>
+
+                        <span>
+                            No cybersecurity jargon. Just clear explanations.
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="why-visual">
+
+            <div class="terminal-window">
+
+                <div class="terminal-top">
+
+                    <div class="terminal-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <span>
+                        scamlens.analysis
+                    </span>
+
+                </div>
+
+                <div class="terminal-body">
+
+                    <p>
+                        <span class="terminal-green">
+                            $
+                        </span>
+                        scanning_message...
+                    </p>
+
+                    <p class="terminal-muted">
+                        checking urgency
+                        <span>✓</span>
+                    </p>
+
+                    <p class="terminal-muted">
+                        checking impersonation
+                        <span>✓</span>
+                    </p>
+
+                    <p class="terminal-muted">
+                        checking payment_request
+                        <span>✓</span>
+                    </p>
+
+                    <p class="terminal-muted">
+                        checking suspicious_links
+                        <span>✓</span>
+                    </p>
+
+                    <div class="terminal-result">
+
+                        <p>
+                            RISK_LEVEL:
+                            <strong>HIGH</strong>
+                        </p>
+
+                        <p>
+                            FLAGS_FOUND:
+                            <strong>4</strong>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <a href="#" class="brand">
+
+                <div class="brand-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <span>Scam<span>Lens</span></span>
+
+            </a>
+
+            <p>
+                Think before you click.
+            </p>
+
+        </div>
+
+
+        <div class="footer-right">
+
+            <span>
+                AI-assisted scam awareness
+            </span>
+
+            <span>
+                © 2026 ScamLens
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+</main>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
