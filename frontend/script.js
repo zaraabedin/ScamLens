@@ -208,7 +208,7 @@ async function analyzeMessage() {
             );
 
             response = await fetch(
-                ""https://scamlens-backend-l1m6.onrender.com/analyze-image"",
+                "https://scamlens-backend-l1m6.onrender.com/analyze-image",
                 {
                     method: "POST",
                     body: formData
@@ -225,7 +225,7 @@ async function analyzeMessage() {
             console.log("Sending text to backend...");
 
             response = await fetch(
-                ""https://scamlens-backend-l1m6.onrender.com/analyze"",
+                "https://scamlens-backend-l1m6.onrender.com/analyze",
                 {
                     method: "POST",
 
