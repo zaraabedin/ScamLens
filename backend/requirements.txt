@@ -2,3 +2,6 @@ Flask
 flask-cors
 python-dotenv
 openai
+Pillow
+pytesseract
+gunicorn
